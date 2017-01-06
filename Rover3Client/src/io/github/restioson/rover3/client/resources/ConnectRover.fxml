@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="93.0" prefWidth="309.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="io.github.restioson.rover3.client.ConnectRoverController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <BorderPane layoutX="0.0" layoutY="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="309.0">
+      <bottom>
+        <Button mnemonicParsing="false" onAction="#connect" text="Connect" BorderPane.alignment="CENTER">
+          <BorderPane.margin>
+            <Insets bottom="20.0" top="10.0" />
+          </BorderPane.margin>
+        </Button>
+      </bottom>
+      <center>
+        <TextField fx:id="roverIP" prefHeight="-1.0" prefWidth="-1.0" BorderPane.alignment="CENTER">
+          <BorderPane.margin>
+            <Insets right="10.0" top="20.0" />
+          </BorderPane.margin>
+        </TextField>
+      </center>
+      <left>
+        <Label text="Rover IP" BorderPane.alignment="CENTER_LEFT">
+          <BorderPane.margin>
+            <Insets left="10.0" right="10.0" top="20.0" />
+          </BorderPane.margin>
+        </Label>
+      </left>
+    </BorderPane>
+  </children>
+</AnchorPane>

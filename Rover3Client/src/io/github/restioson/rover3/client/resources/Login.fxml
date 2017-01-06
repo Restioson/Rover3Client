@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="220.0" prefWidth="490.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <bottom>
+    <Button mnemonicParsing="false" text="Login" BorderPane.alignment="CENTER">
+      <BorderPane.margin>
+        <Insets bottom="30.0" top="20.0" />
+      </BorderPane.margin>
+    </Button>
+  </bottom>
+  <left>
+    <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="107.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <bottom>
+        <Label text="Password" BorderPane.alignment="CENTER_LEFT">
+          <font>
+            <Font size="18.0" fx:id="x1" />
+          </font>
+          <BorderPane.margin>
+            <Insets left="50.0" fx:id="x2" />
+          </BorderPane.margin>
+        </Label>
+      </bottom>
+      <top>
+        <Label font="$x1" text="Username" BorderPane.alignment="CENTER_LEFT" BorderPane.margin="$x2" />
+      </top>
+    </BorderPane>
+  </left>
+  <right>
+    <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="107.0" prefWidth="244.9998779296875" BorderPane.alignment="CENTER">
+      <bottom>
+        <PasswordField prefWidth="200.0">
+          <BorderPane.margin>
+            <Insets right="50.0" fx:id="x3" />
+          </BorderPane.margin>
+        </PasswordField>
+      </bottom>
+      <top>
+        <TextField prefWidth="200.0" BorderPane.margin="$x3" />
+      </top>
+    </BorderPane>
+  </right>
+  <top>
+    <Label text="Welcome - Login" BorderPane.alignment="TOP_CENTER">
+      <font>
+        <Font size="42.0" />
+      </font>
+      <BorderPane.margin>
+        <Insets bottom="20.0" top="20.0" />
+      </BorderPane.margin>
+    </Label>
+  </top>
+</BorderPane>

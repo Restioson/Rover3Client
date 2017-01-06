@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="io.github.restioson.rover3.client.MainController">
+  <children>
+    <ImageView fx:id="streamFrame" fitHeight="576.0" fitWidth="1024.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER">
+      <StackPane.margin>
+        <Insets />
+      </StackPane.margin>
+    </ImageView>
+    <Button contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#connectRover" prefHeight="-1.0" text="Connect ..." StackPane.alignment="CENTER">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </Button>
+    <Label fx:id="dateAndTime" alignment="TOP_LEFT" opacity="1.0" text="YYYY-MM-DD&#10;HH:MM:SS" StackPane.alignment="TOP_RIGHT">
+      <font>
+        <Font name="Courier New" size="16.0" fx:id="x1" />
+      </font>
+      <StackPane.margin>
+        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" fx:id="x2" />
+      </StackPane.margin>
+    </Label>
+    <Label id="tempAndHumidity" alignment="CENTER_LEFT" contentDisplay="LEFT" font="$x1" maxWidth="-1.0" text="Temperature: XX°C&#10;Humidity: XX.XX%&#10;Front Sensor: XX.XXcm&#10;Back Sensor: XX.XXcm" StackPane.alignment="TOP_LEFT" StackPane.margin="$x2" />
+    <StackPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="120.0" prefWidth="400.0" StackPane.alignment="TOP_CENTER">
+      <children>
+        <Label fx:id="rangefinderReadings" alignment="CENTER_LEFT" font="$x1" text="Front Sensor: XXcm&#10;Back Sensor: XXcm" visible="true" StackPane.alignment="CENTER_RIGHT" />
+        <Label id="speedDirectionTilt" fx:id="speedDirectionAndTilt" font="$x1" text="Heading: XX°&#10;Course: XX°&#10;Pitch: XX°&#10;Roll: XX°" StackPane.alignment="CENTER_LEFT" />
+      </children>
+    </StackPane>
+  </children>
+</StackPane>

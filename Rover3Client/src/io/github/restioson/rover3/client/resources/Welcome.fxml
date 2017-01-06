@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="239.0" prefWidth="431.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="io.github.restioson.rover3.client.WelcomeController">
+  <bottom>
+    <BorderPane prefHeight="52.0" prefWidth="431.0" BorderPane.alignment="CENTER">
+      <center>
+        <Button mnemonicParsing="false" onAction="#continueCallback" text="Continue" BorderPane.alignment="CENTER">
+          <BorderPane.margin>
+            <Insets left="122.0" />
+          </BorderPane.margin>
+        </Button>
+      </center>
+      <right>
+        <CheckBox mnemonicParsing="false" text="Don't show again" BorderPane.alignment="CENTER">
+          <BorderPane.margin>
+            <Insets right="10.0" />
+          </BorderPane.margin>
+        </CheckBox>
+      </right>
+    </BorderPane>
+  </bottom>
+  <right>
+    <Label text="Welcome to the Rover Client! This program will allow you to connect to the Rover to control it, receive data, and view a video stream from the Rover's camera." underline="false" wrapText="true" BorderPane.alignment="CENTER">
+      <font>
+        <Font name="Verdana" size="14.0" />
+      </font>
+      <BorderPane.margin>
+        <Insets left="10.0" right="10.0" />
+      </BorderPane.margin>
+    </Label>
+  </right>
+  <top>
+    <Label text="Rover Client" BorderPane.alignment="CENTER">
+      <font>
+        <Font name="Verdana" size="42.0" />
+      </font>
+      <BorderPane.margin>
+        <Insets top="10.0" />
+      </BorderPane.margin>
+    </Label>
+  </top>
+</BorderPane>
